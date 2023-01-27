@@ -66,7 +66,14 @@ const playRound = (computerSelection, userSelection) => {
   return result;
 }
 
-const computerSelection = getComputerChoice();
-const userSelection = getUserChoice();
+// function to play the game
+const playGame = (round=5) => {
+  for (let i = 0; i < round; i++) {
+    const computerSelection = getComputerChoice();
+    const userSelection = getUserChoice();
+    
+    console.log(playRound(computerSelection, userSelection))
+  }
+}
 
-console.log(playRound(computerSelection, userSelection))
+playGame()
