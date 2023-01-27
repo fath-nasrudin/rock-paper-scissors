@@ -26,7 +26,16 @@ const getUserChoice = () => {
   return result.toLowerCase();
 }
 
+// validate user input to only choose rock, paper, or scissors
+const checkValidValue = (input) => {
+  return (input === 'paper' || input === 'rock' || input === 'scissors')
+}
+
 const playRound = (computerSelection, userSelection) => {
+
+  // validate user input
+  const userInputValid = checkValidValue(userSelection);
+  if (!userInputValid) return `Your input is not valid: ${userSelection}`
 
   let message = 'Something went wrong.';
 
