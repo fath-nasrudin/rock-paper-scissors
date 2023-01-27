@@ -31,16 +31,12 @@ const checkValidValue = (input) => {
   return (input === 'paper' || input === 'rock' || input === 'scissors')
 }
 
-const playRound = (computerSelection, userSelection) => {
 
-  // validate user input
-  const userInputValid = checkValidValue(userSelection);
-  if (!userInputValid) return `Your input is not valid: ${userSelection}`
-
+const compareSelections = (computerSelection, userSelection) => {
   let message = 'Something went wrong.';
 
-  // tie
-  if (computerSelection === userSelection) message = `Tie! both player have chosen ${computerSelection}`
+  // draw
+  if (computerSelection === userSelection) message = `Draw! both player have chosen ${computerSelection}`;
 
   if (computerSelection === 'rock') {
     if (userSelection === 'paper') message = 'You win! paper beats rock'
@@ -56,8 +52,18 @@ const playRound = (computerSelection, userSelection) => {
     if (userSelection === 'rock') message = 'You win! rock beats scissors'
     if (userSelection === 'paper') message = 'You Lose! scissors beats paper'
   } 
-  
   return message;
+}
+
+const playRound = (computerSelection, userSelection) => {
+
+  // validate user input
+  const userInputValid = checkValidValue(userSelection);
+  if (!userInputValid) return `Your input is not valid: ${userSelection}`
+
+  // get the result
+  const result = compareSelections(computerSelection, userSelection)
+  return result;
 }
 
 const computerSelection = getComputerChoice();
