@@ -1,18 +1,3 @@
-/**
- * Algorithm proposed
- * 
- * This game will have 5 rounds
- * 
- * we need to get computer choice
- * get user choice
- * turn the round
- * show the result
- * 
- * repeat until 5 rounds
- * 
- * send the final result
- */
-
 const choices = ['rock', 'paper', 'scissors']
 
 // Get computer choice
