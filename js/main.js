@@ -17,7 +17,6 @@ const checkValidValue = (input) => {
   return (input === 'paper' || input === 'rock' || input === 'scissors')
 }
 
-
 const compareSelections = (computerSelection, userSelection) => {
   let message = 'Something went wrong.';
 
