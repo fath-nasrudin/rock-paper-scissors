@@ -1,5 +1,3 @@
-
-
 // Get computer choice
 const getComputerChoice = () => {
   const choices = ['rock', 'paper', 'scissors']
