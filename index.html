@@ -5,9 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors | Fath Nasrudin</title>
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  
+  <div class="main-container">
+
+    <header class="header">
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="body">
+      <!-- Score -->
+      <section class="content score">
+        <header class="content--header">Score</header>
+        <div class="content--body">
+          <!-- Player -->
+          <!-- Number -->
+          <div class="score--item">
+            <div class="score--title">User</div>
+            <div class="score--number">0</div>
+          </div>
+          <div class="score--divider">-</div>
+          <div class="score--item">
+            <div class="score--title">User</div>
+            <div class="score--number">0</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- button selection -->
+      <section class="content button-choice">
+        <div class="content--header">Choose:</div>
+        <div class="content--body">
+          <div id="button-selection" class="buttons">
+            <button id="button-rock" value="rock">&#128074; Rock</button>
+            <button id="button-paper" value="paper">&#128400; Paper</button>
+            <button id="button-scissors" value="scissors">&#9996; Scissors</button>
+          </div>
+        </div>
+      </section>
+      <!-- battle log -->
+
+      <section class="battle-log content">
+        <header class="content--header">
+          <h2>Battle Log</h2>
+        </header>
+        <div class="content--body"></div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy; <a href="https://github.com/fath-nasrudin">Fathurrohman Nasrudin</a> 2023</p>
+    </footer>
+  </div>
 </body>
 </html>
