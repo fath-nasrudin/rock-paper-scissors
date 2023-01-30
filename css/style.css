@@ -25,6 +25,14 @@ button:active {
   background-color: rgb(206, 177, 177);
 }
 
+button:disabled {
+  color: white;
+  cursor: not-allowed;
+}
+button:disabled:hover {
+  outline: 0.25rem solid gray;
+}
+
 a {
   text-decoration: none;  
   color: orange;
