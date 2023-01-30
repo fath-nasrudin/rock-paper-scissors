@@ -146,13 +146,10 @@ body {
   border: 1px solid white;
 }
 .battle-log p {
-  padding: 0.3rem 1rem;
+  padding: 0 1rem;
 }
 
-.battle-log p:nth-child(even) {
-  background-color: rgba(186, 165, 165, 0.497);
-}
-/* Battle Log Block Start */
+/* Battle Log Block End */
 
 /* Score Start */
 .score {
