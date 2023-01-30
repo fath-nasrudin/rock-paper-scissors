@@ -4,12 +4,6 @@ const getComputerChoice = () => {
   return choices[Math.floor(Math.random()*3)] 
 }
 
-// Get user choice
-const getUserChoice = () => {
-  const result = prompt(`Choose between, 'rock', 'paper', 'scissors'`);
-  return result.toLowerCase();
-}
-
 // validate user input to only choose rock, paper, or scissors
 const checkValidValue = (input) => {
   return (input === 'paper' || input === 'rock' || input === 'scissors')
@@ -42,17 +36,6 @@ const compareSelections = (computerSelection, userSelection) => {
     if (userSelection === 'paper') return comp;
   } 
   return err;
-}
-
-const playRound = (computerSelection, userSelection) => {
-
-  // validate user input
-  const userInputValid = checkValidValue(userSelection);
-  if (!userInputValid) return `Your input is not valid: ${userSelection}`
-
-  // get the result
-  const result = compareSelections(computerSelection, userSelection)
-  return result;
 }
 
 // function to play the game
