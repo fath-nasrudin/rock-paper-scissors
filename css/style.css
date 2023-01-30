@@ -157,13 +157,23 @@ body {
   flex-direction: row;
 }
 
+.score--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 300px;
+  }
+
 .score--item {
+  flex: 1 1 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .score--divider {
+  flex: none;
   font-size: 4rem;
 }
 
