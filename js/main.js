@@ -65,10 +65,6 @@ const playGame = (round=5) => {
   }
 }
 
-// playGame()
-
-
-
 // check score
 // input: maximal score (number);
 // output: boolean
@@ -158,8 +154,6 @@ Array
   console.log('button disabled')
 }
 
-
-
 // play 1 round based on user click
 const playByClick = (e) => {
   // define selection
@@ -196,19 +190,3 @@ Array
   .forEach(button => {
     button.addEventListener('click', playByClick);
   })
-
-// when click play round
-
-// get user input
-// get computer input
-
-// compare
-// send 
-// 
-
-// when one of the score is 5, end the game.
-// test
-
-// add play again button;
-// add restart button;
-// console.log(compareSelections('paper', 'rock'))
